@@ -80,7 +80,7 @@ print(confusion_matrix(y_test,dummy2_pred))
 # plot ROC curves
 plt.rc('font',size=18)
 plt.rcParams['figure.constrained_layout.use']=True
-# Gaussian Naive Bayes Classifier
+# kNN model
 fpr,tpr,_ = roc_curve(y_test,np.array(knn.predict_proba(X_test).tolist())[:,1])
 plt.plot(fpr,tpr,color='green')
 # baseline(most frequent)
