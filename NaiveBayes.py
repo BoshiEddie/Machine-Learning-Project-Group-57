@@ -30,7 +30,7 @@ GNB.fit(X_train, y_train)
 GNB_pred = GNB.predict(X_test)
 print('Gaussian Naive Bayes Classifier Accuracy: ', metrics.accuracy_score(y_test, GNB_pred))
 
-# confusion matrix of logistic regression model
+# confusion matrix of Gaussian Naive Bayes Classifier
 print('Gaussian Naive Bayes Classifier Confusion Matrix')
 print(confusion_matrix(y_test, GNB_pred))
 
